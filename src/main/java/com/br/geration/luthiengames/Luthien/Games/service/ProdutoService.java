@@ -16,6 +16,12 @@ public class ProdutoService {
     @Autowired
     private ProdutoRepository service;
 
+    public Produto createProduct (Produto produto)
+    {
+        return service.save(produto);
+    }
+
+
     public List<Produto> getAll()
     {
         return service.findAll();
@@ -26,16 +32,15 @@ public class ProdutoService {
         Optional<Produto> categoria = service.findById(id);
         return categoria.get();
     }
-
     public List<Produto> findByNome(String nome)
     {
         return service.findAllByNomeContainingIgnoreCase(nome);
     }
 
-    public Produto deleteById(long id)
+    public void deleteById(long id)
     {
-        Optional<Produto> produto = service.findById(id);
-        return produto.get();
+         service.deleteById(id);
+
     }
 
 }

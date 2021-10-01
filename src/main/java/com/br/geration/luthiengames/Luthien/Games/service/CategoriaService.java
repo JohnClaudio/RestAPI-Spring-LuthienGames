@@ -14,6 +14,10 @@ public class CategoriaService {
     @Autowired
     private CategoriaRepository service;
 
+    public Categoria createCategoria(Categoria categoria)
+    {
+        return service.save(categoria);
+    }
     public List<Categoria> getAll()
     {
         return service.findAll();
