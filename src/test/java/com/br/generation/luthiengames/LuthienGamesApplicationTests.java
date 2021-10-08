@@ -1,4 +1,4 @@
-package com.br.geration.luthiengames.Luthien.Games;
+package com.br.generation.luthiengames;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

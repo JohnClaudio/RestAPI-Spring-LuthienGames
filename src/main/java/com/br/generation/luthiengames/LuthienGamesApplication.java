@@ -1,4 +1,4 @@
-package com.br.geration.luthiengames.Luthien.Games;
+package com.br.generation.luthiengames;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

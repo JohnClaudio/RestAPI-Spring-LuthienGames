@@ -1,7 +1,7 @@
-package com.br.geration.luthiengames.Luthien.Games.service;
+package com.br.generation.luthiengames.service;
 
-import com.br.geration.luthiengames.Luthien.Games.model.Categoria;
-import com.br.geration.luthiengames.Luthien.Games.repository.CategoriaRepository;
+import com.br.generation.luthiengames.model.Categoria;
+import com.br.generation.luthiengames.repository.CategoriaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

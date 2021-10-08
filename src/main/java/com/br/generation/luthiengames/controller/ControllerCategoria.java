@@ -1,8 +1,7 @@
-package com.br.geration.luthiengames.Luthien.Games.controller;
+package com.br.generation.luthiengames.controller;
 
-import com.br.geration.luthiengames.Luthien.Games.model.Categoria;
-import com.br.geration.luthiengames.Luthien.Games.model.Produto;
-import com.br.geration.luthiengames.Luthien.Games.service.CategoriaService;
+import com.br.generation.luthiengames.model.Categoria;
+import com.br.generation.luthiengames.service.CategoriaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

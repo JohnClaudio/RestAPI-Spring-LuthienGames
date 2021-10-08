@@ -1,4 +1,4 @@
-package com.br.geration.luthiengames.Luthien.Games.model;
+package com.br.generation.luthiengames.model;
 
 import lombok.Getter;
 import lombok.Setter;
