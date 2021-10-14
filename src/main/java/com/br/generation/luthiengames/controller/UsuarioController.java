@@ -1,5 +1,6 @@
 package com.br.generation.luthiengames.controller;
 
+import com.br.generation.luthiengames.model.Categoria;
 import com.br.generation.luthiengames.model.Usuario;
 import com.br.generation.luthiengames.model.UsuarioLogin;
 import com.br.generation.luthiengames.service.UsuarioService;
@@ -18,9 +19,17 @@ public class UsuarioController {
     @Autowired
     private UsuarioService usuarioService;
 
-    @GetMapping
+    @GetMapping("/all")
     public List<Usuario> findAll() {
         return usuarioService.findAll();
+    }
+    @PutMapping("/atualizar")
+    public ResponseEntity<Usuario> updateProduct(@RequestBody Usuario obj )
+    {
+        return usuarioService.cadastrarUsuario(obj)
+                .map(respostaCadastro -> ResponseEntity.status(HttpStatus.OK).body(respostaCadastro))
+                .orElse(ResponseEntity.status(HttpStatus.BAD_REQUEST).build());
+
     }
 
     @PostMapping("/logar")
